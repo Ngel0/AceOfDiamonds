@@ -1,0 +1,9 @@
+<div>Написать маляву</div>
+<textarea name="mesage" rows="10" cols="50" wrap="virtual"> Текст по умолчанию </textarea>
+<script>
+    let delete_prof = document.getElementById('delete_profile');
+    delete_prof.addEventListener("click", function(){ window.location = '<%= letter_path %>' }, false);
+
+    let change_pass = document.getElementById('change_password');
+    change_pass.addEventListener("click", function(){ window.location = '<%= letter_path %>' }, false);
+</script>

@@ -14,9 +14,11 @@ class HomeController < ApplicationController
     #params[:inptext]
     inputstr = params[:inptext]#'Скажи дядя ведь не даром' #считывается с сайта
     File.open('E:/Desktop/PycharmProjects/Project2/books_before/text.txt', 'w'){ |file| file.write inputstr }
+    #File.open('C:/text.txt', 'w'){ |file| file.write inputstr }
     #File.close ??
-    `py E:/Desktop/PycharmProjects/Project2/copy2.py`
-    value = File.open('E:/Desktop/PycharmProjects/Project2/books_after/3.0_text.txt', 'r'){ |file| file.read }#считать из файла after
+    `py copy2.py`
+    value = File.open('E:/Desktop/PycharmProjects/Project2/books_after/3.0_text.txt', 'r'){ |file| file.read }
+    #value = File.open('C:/3.0_text.txt', 'r'){ |file| file.read }
     session[:varin]=inputstr
     session[:varout] = value
     #session[:varout] = value

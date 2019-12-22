@@ -1,5 +1,7 @@
 class HomeController < ApplicationController
   def index
+    File.new('lib/text.txt')
+    File.new('lib/textout.txt')
   end
 
   def letter

@@ -4,7 +4,7 @@ dawg-python==0.7.2
 docopt==0.6.2
 gensim==3.8.0
 icc_rt==2019.0.0
-intel-openmp==2019.4
+intel-openmp==2019.0
 mkl==2019.4
 mkl-service==2.3.0
 mkl_fft==1.0.15

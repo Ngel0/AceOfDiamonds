@@ -4,24 +4,15 @@ class HomeController < ApplicationController
   end
 
   def letter
-
-  end
-
-  def letters
     #value = `py E:/Desktop/PycharmProjects/Project2/wRuby.py человек_NOUN`
 
-    # записать в файл before
-    #params[:inptext]
-    inputstr = params[:inptext]#'Скажи дядя ведь не даром' #считывается с сайта
-    File.open('E:/Desktop/PycharmProjects/Project2/books_before/text.txt', 'w'){ |file| file.write inputstr }
-    #File.open('C:/text.txt', 'w'){ |file| file.write inputstr }
-    #File.close ??
-    `py copy2.py`
-    value = File.open('E:/Desktop/PycharmProjects/Project2/books_after/3.0_text.txt', 'r'){ |file| file.read }
-    #value = File.open('C:/3.0_text.txt', 'r'){ |file| file.read }
-    session[:varin]=inputstr
-    session[:varout] = value
-    #session[:varout] = value
-    redirect_to "/letter"
+    inpath = 'lib/text.txt'
+    outpath = 'lib/textout.txt'
+    session[:intext] = params[:intext]
+    File.open(inpath, 'w'){ |file| file.write session[:intext] }
+    `py lib/script.py #{inpath} #{outpath}`
+    value = File.open(outpath, 'r'){ |file| file.read }
+    session[:outtext] = value
+    redirect_to "/"
   end
 end

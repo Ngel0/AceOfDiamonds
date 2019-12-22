@@ -1,9 +1,29 @@
-<div>Написать маляву</div>
-<textarea name="mesage" rows="10" cols="50" wrap="virtual"> Текст по умолчанию </textarea>
-<script>
-    let delete_prof = document.getElementById('delete_profile');
-    delete_prof.addEventListener("click", function(){ window.location = '<%= letter_path %>' }, false);
 
-    let change_pass = document.getElementById('change_password');
-    change_pass.addEventListener("click", function(){ window.location = '<%= letter_path %>' }, false);
-</script>
+<div class=wrapper"">
+
+  <div class="row">
+
+    <div class="column">
+
+      <form accept-charset="UTF-8" action="/letter" data-remote="true" method="post">
+        <!--<input name="inptext" class="ttt" type="text"/>-->
+        <textarea name = "intext" class="ttt"><%= session[:intext] %></textarea>
+        <button text="перевести" class="left top text" id="next">Накатать маляву</button>
+      </form>
+
+    </div>
+
+    <div id="column_scene-wrapper" class="column">
+
+      <div>
+        <textarea name = "outtext" class="ttt"><%= session[:outtext] %></textarea>
+        <!--<%= session[:outtext] %>-->
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+

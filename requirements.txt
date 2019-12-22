@@ -8,7 +8,7 @@ intel-openmp==2019.0
 mkl==2019.0
 #mkl-service==2.3.0
 mkl_fft==1.0.6
-mkl_random==1.1.0
+mkl_random==1.0.1.1
 numpy==1.17.4
 numpy-base==1.17.4
 openssl==1.1.1d

@@ -13,11 +13,6 @@ morph = pymorphy2.MorphAnalyzer()
 punct = re.compile('^(.*?)([а-яА-ЯёЁ-]+)(.*?)$')
 capit = re.compile('^[А-Я]+$')
 
-#pth_source = 'E:/Desktop/PycharmProjects/Project2/books_before/'
-#lst = os.listdir(pth_source)
-
-#pth_result = 'E:/Desktop/PycharmProjects/Project2/books_after/'
-
 cotags = {'ADJF': 'ADJ',  # pymorphy2: word2vec
           'ADJS': 'ADJ',
           'ADVB': 'ADV',
@@ -199,8 +194,3 @@ for line in f:
     fw.write(line_replace + '\n')
 f.close()
 fw.close()
-
-
-
-
-

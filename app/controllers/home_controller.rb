@@ -1,11 +1,8 @@
 class HomeController < ApplicationController
   def index
-
   end
 
   def letter
-    #value = `py E:/Desktop/PycharmProjects/Project2/wRuby.py человек_NOUN`
-
     inpath = 'lib/text.txt'
     outpath = 'lib/textout.txt'
     session[:intext] = params[:intext]

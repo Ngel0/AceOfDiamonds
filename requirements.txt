@@ -6,7 +6,7 @@ gensim==3.8.0
 icc_rt==2019.0.0
 intel-openmp==2019.0
 mkl==2019.0
-mkl-service==2.3.0
+#mkl-service==2.3.0
 mkl_fft==1.0.15
 mkl_random==1.1.0
 numpy==1.17.4

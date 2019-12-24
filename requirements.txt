@@ -13,11 +13,11 @@ docutils==0.15.2
 gensim==3.8.0
 idna==2.8
 jmespath==0.9.4
-mkl-fft==1.0.6
-mkl-random==1.0.1.1
+nomkl-fft==1.0.6
+nomkl-random==1.0.1.1
 #mkl-service==2.3.0
 numpy==1.17.4
-#pycparser==2.19
+pycparser==2.19
 pymorphy2==0.8
 pymorphy2-dicts==2.4.393442.3710985
 pyOpenSSL==19.1.0

@@ -1,5 +1,4 @@
-﻿#!E:/Programs/Anaconda3/envs/Project2/python
-import os
+﻿import os
 import re
 import pymorphy2
 import sys

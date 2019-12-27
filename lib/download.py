@@ -1,5 +1,3 @@
-#!E:/Programs/Anaconda3/envs/Project2/python
-
 import sys
 import boto3
 

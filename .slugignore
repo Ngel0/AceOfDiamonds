@@ -1,5 +1,4 @@
 *.psd
 *.pdf
-requirements.txt
 /test
 /log

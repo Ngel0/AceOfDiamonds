@@ -1,5 +1,4 @@
-#!E:/Programs/Anaconda3/envs/Project2/python
-
+﻿#!E:/Programs/Anaconda3/envs/myenv/python
 import os
 import re
 import pymorphy2
@@ -7,6 +6,7 @@ import sys
 from gensim.models import Word2Vec
 
 model = Word2Vec.load("lib/neural.model")
+#model = Word2Vec.load('https://ace-of-diamond.s3.amazonaws.com/neural.model')
 model.init_sims(replace=True)
 
 morph = pymorphy2.MorphAnalyzer()
